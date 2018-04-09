@@ -2,9 +2,17 @@
 ## Title: LeagueOfMurders
 ## Notes-ruRU: Модификация для членов гильдии Лига Убийц
 ## Author: Manik
-## SavedVariables:
-## SavedVariablesPerCharacter: LoMDB
+## SavedVariables: charINFO
+## SavedVariablesPerCharacter: LoMDB 
+
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
 
 Libs\LeagueOfMurders_codex.lua
 Libs\LeagueOfMurders_lib.lua
+
 core.lua
