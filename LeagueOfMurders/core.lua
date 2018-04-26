@@ -83,12 +83,10 @@ mMapButton:SetScript("OnUpdate", function(self, elapsed)
         respPoints, supPoints = officernote:match("([^,]+),([^,]+)");
 
         infoText:SetText(
-        "                            Информация:" ..
-        "\n\n                            Имя: " .. playerName ..
-        "\n                            Ранг: " .. guildRankName .. 
-        "\n                            Очки уважения: " .. respPoints ..
-        "\n                            Очки снабжения: " .. supPoints ..
-        "\n\nЛокация: " .. zone);
+        "\nИмя: " .. playerName ..
+        "\nРанг: " .. guildRankName .. 
+        "\nОчки уважения: " .. respPoints ..
+        "\nОчки снабжения: " .. supPoints);
 
         SetPortraitTexture(codexPortrait, "player");
 
@@ -177,7 +175,9 @@ function events:GUILD_MOTD(...)
 
 end
 
-if guildName == "Лига Убийц" then 
+---->didn't work, need to fix<----
+
+--if guildName == "Лига Убийц" then 
 
 function events:PLAYER_LEAVING_WORLD(...)
 
@@ -251,7 +251,7 @@ comm:SetScript("OnEvent", function(self, event, prefix, msg, channel, sender)
     end;
 end)
 
-end
+--end
 
 --Регестрируем эвенты
 LeagueofMurders:SetScript("OnEvent", function(self, event, ...)
